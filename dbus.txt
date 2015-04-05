@@ -1,0 +1,1 @@
+dbus-send --session --print-reply --dest="org.nemomobile.voicecall" "/" org.nemomobile.voicecall.VoiceCallManager.dial string:"telepathy-ring/tel/account0" string:"0123456789"
