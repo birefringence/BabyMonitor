@@ -17,7 +17,7 @@ SoundAnalyzer::SoundAnalyzer(QObject *parent) :
 
     QAudioDeviceInfo info(QAudioDeviceInfo::defaultInputDevice());
 
-    qDebug() << "Device: " << info.deviceName();
+//    qDebug() << "Device: " << info.deviceName();
 
 //    af = info.nearestFormat(af);
 //    qDebug() << "Sample Rate   " << af.sampleRate();
@@ -36,22 +36,22 @@ SoundAnalyzer::SoundAnalyzer(QObject *parent) :
 //    qDebug() << "result: " << audio->error();
 }
 
-void SoundAnalyzer::testsignal()
-{
-//    qDebug() << "Input";
-//    QList<QAudioDeviceInfo> list = QAudioDeviceInfo::availableDevices(QAudio::AudioInput);
+//void SoundAnalyzer::testsignal()
+//{
+////    qDebug() << "Input";
+////    QList<QAudioDeviceInfo> list = QAudioDeviceInfo::availableDevices(QAudio::AudioInput);
 
-//    for (int i = 0; i < list.size(); ++i) {
-//        qDebug() << list[i].deviceName();
-//    }
-//    qDebug() << "Output";
-//    list = QAudioDeviceInfo::availableDevices(QAudio::AudioOutput);
+////    for (int i = 0; i < list.size(); ++i) {
+////        qDebug() << list[i].deviceName();
+////    }
+////    qDebug() << "Output";
+////    list = QAudioDeviceInfo::availableDevices(QAudio::AudioOutput);
 
-//    for (int i = 0; i < list.size(); ++i) {
-//        qDebug() << list[i].deviceName();
-//    }
-    qDebug() << "State " << audio->state();
-}
+////    for (int i = 0; i < list.size(); ++i) {
+////        qDebug() << list[i].deviceName();
+////    }
+//    qDebug() << "State " << audio->state();
+//}
 
 void SoundAnalyzer::analyze()
 {

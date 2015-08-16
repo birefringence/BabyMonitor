@@ -36,8 +36,11 @@ import org.nemomobile.dbus 2.0
 
 ApplicationWindow
 {
-    initialPage: Component { FirstPage { } }
+    initialPage: Component { MainPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
+//    property string coverIcon: "image://theme/icon-cover-play"
+//    property string coverString: qsTr("inactive")
+    property bool appActive: false;
 
     DBusInterface {
         id: voiceCall

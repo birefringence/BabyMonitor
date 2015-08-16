@@ -20,15 +20,15 @@ SOURCES += \
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
-    qml/pages/FirstPage.qml \
-    qml/pages/SecondPage.qml \
     translations/*.ts \
     qml/script/functions.js \
     harbour-babymonitor.desktop \
     rpm/harbour-babymonitor.yaml \
     rpm/harbour-babymonitor.spec \
     rpm/harbour-babymonitor.changes.in \
-    qml/harbour-babymonitor.qml
+    qml/harbour-babymonitor.qml \
+    qml/pages/AboutPage.qml \
+    qml/pages/MainPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

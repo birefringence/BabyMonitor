@@ -33,22 +33,38 @@ import Sailfish.Silica 1.0
 
 CoverBackground {
     Label {
-        id: label
+        y: Theme.paddingLarge
+        anchors.horizontalCenter: parent.horizontalCenter
+        text: "Baby Monitor"
+    }
+
+    Label {
         anchors.centerIn: parent
-        text: qsTr("My Cover")
+        text: appActive ? qsTr("active") : qsTr("inactive")
     }
 
     CoverActionList {
-        id: coverAction
-
-        CoverAction {
-            iconSource: "image://theme/icon-cover-next"
-        }
+        enabled: appActive
 
         CoverAction {
             iconSource: "image://theme/icon-cover-pause"
+            onTriggered: { appActive = false; }
+        }
+
+    }
+
+    CoverActionList {
+        enabled: !appActive
+
+        CoverAction {
+            iconSource: "image://theme/icon-cover-play"
+            onTriggered: { appActive = true; }
         }
     }
+
+//        CoverAction {
+//            iconSource: "image://theme/icon-cover-start"
+//        }
 }
 
 

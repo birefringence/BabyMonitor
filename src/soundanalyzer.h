@@ -17,7 +17,7 @@ signals:
 
 public slots:
     void analyze();
-    void testsignal();
+//    void testsignal();
 
 private:
 //    QAudioInput *audio;

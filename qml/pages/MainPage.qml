@@ -43,8 +43,8 @@ Page {
         // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
         PullDownMenu {
             MenuItem {
-                text: qsTr("Show Page 2")
-                onClicked: pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+                text: qsTr("About")
+                onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
             }
         }
 
@@ -59,29 +59,36 @@ Page {
             width: page.width
             spacing: Theme.paddingLarge
             PageHeader {
-                title: qsTr("UI Template")
+                title: qsTr("Baby Monitor")
             }
             Label {
-                x: Theme.paddingLarge
-                text: qsTr("Hello Sailors")
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeExtraLarge
+//                x: Theme.paddingLarge
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.leftMargin: Theme.paddingLarge
+                anchors.rightMargin: Theme.paddingLarge
+                text: qsTr("Warning: Alpha-quality code. Only suitable for testing. " +
+                            "Please do not use this as a baby monitor! " +
+                            "It is almost certainly going to break in unexpected ways.")
+                color: Theme.primaryColor
+                //width: parent.width
+                wrapMode: Text.Wrap
             }
-            Button {
-                text: qsTr("Call")
-                onClicked: voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value: phoneNumber.text}])
-            }
-            Button {
-                text: qsTr("Test")
-                onClicked: soundAnalyzer.testsignal()
-            }
+//            Button {
+//                text: qsTr("Call")
+//                onClicked: voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value: phoneNumber.text}])
+//            }
+//            Button {
+//                text: qsTr("Test")
+//                onClicked: soundAnalyzer.testsignal()
+//            }
             Slider {
                 id: thresholdBar
 
                 width:  parent.width
                 minimumValue: 0
                 maximumValue: 16
-                label: "Sound Level Threshold"
+                label: qsTr("Sound Level Threshold")
                 value: 8
             }
             ProgressBar {
@@ -90,7 +97,7 @@ Page {
                 width:  parent.width
                 minimumValue: 0
                 maximumValue: 16
-                label: "Sound Level"
+                label: qsTr("Sound Level")
                 value: 0
                 Connections {
                     target: soundAnalyzer
@@ -101,7 +108,7 @@ Page {
                 id: cooldownBar
 
                 width:  parent.width
-                label: "Cool Down Delay"
+                label: qsTr("Trigger Cool Down Delay")
                 minimumValue: 0
                 maximumValue: 5
                 value: 1
@@ -110,7 +117,7 @@ Page {
                 id: delayBar
 
                 width:  parent.width
-                label: "Trigger Threshold"
+                label: qsTr("Trigger Threshold")
                 minimumValue: 0
                 maximumValue: 10
                 value: 5
@@ -119,7 +126,7 @@ Page {
                 id: triggerBar
 
                 width:  parent.width
-                label: "Trigger"
+                label: qsTr("Trigger")
                 minimumValue: 0
                 maximumValue: 10
                 value: 0
@@ -128,14 +135,19 @@ Page {
                 id: armSwitch
 
                 width:  parent.width
-                text: "Armed"
+                text: qsTr("Armed")
+                checked: appActive;
+                automaticCheck: false;
+                onClicked: {
+                    appActive = checked
+                }
             }
             TextField {
                 id: phoneNumber
 
                 width:  parent.width
-                label: "Phone Number"
-                placeholderText: "Please Enter Phone Number"
+                label: qsTr("Phone Number")
+                placeholderText: qsTr("Please Enter Phone Number")
                 inputMethodHints: Qt.ImhDialableCharactersOnly
             }
         }
