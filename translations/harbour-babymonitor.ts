@@ -4,6 +4,7 @@
 <context>
     <name>CoverPage</name>
     <message>
+        <location filename="../qml/cover/CoverPage.qml" line="38"/>
         <source>My Cover</source>
         <translation type="unfinished"></translation>
     </message>
@@ -11,22 +12,27 @@
 <context>
     <name>FirstPage</name>
     <message>
+        <location filename="../qml/pages/FirstPage.qml" line="46"/>
         <source>Show Page 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/FirstPage.qml" line="62"/>
         <source>UI Template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/FirstPage.qml" line="66"/>
         <source>Hello Sailors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/FirstPage.qml" line="71"/>
         <source>Call</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/FirstPage.qml" line="75"/>
         <source>Test</source>
         <translation type="unfinished"></translation>
     </message>
@@ -34,10 +40,12 @@
 <context>
     <name>SecondPage</name>
     <message>
+        <location filename="../qml/pages/SecondPage.qml" line="42"/>
         <source>Nested Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/SecondPage.qml" line="49"/>
         <source>Item</source>
         <translation type="unfinished"></translation>
     </message>

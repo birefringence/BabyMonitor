@@ -10,28 +10,30 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = BabyMonitor
+TARGET = harbour-babymonitor
 
 CONFIG += sailfishapp
 
-SOURCES += src/BabyMonitor.cpp \
-    src/soundanalyzer.cpp
+SOURCES += \
+    src/soundanalyzer.cpp \
+    src/harbour-babymonitor.cpp
 
-OTHER_FILES += qml/BabyMonitor.qml \
+OTHER_FILES += \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
     qml/pages/SecondPage.qml \
-    rpm/BabyMonitor.changes.in \
-    rpm/BabyMonitor.spec \
-    rpm/BabyMonitor.yaml \
     translations/*.ts \
-    BabyMonitor.desktop \
-    qml/script/functions.js
+    qml/script/functions.js \
+    harbour-babymonitor.desktop \
+    rpm/harbour-babymonitor.yaml \
+    rpm/harbour-babymonitor.spec \
+    rpm/harbour-babymonitor.changes.in \
+    qml/harbour-babymonitor.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
-TRANSLATIONS += translations/BabyMonitor-de.ts
+TRANSLATIONS += translations/harbour-babymonitor-de.ts
 
 QT += dbus multimedia
 

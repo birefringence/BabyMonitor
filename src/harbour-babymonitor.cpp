@@ -50,11 +50,11 @@ int main(int argc, char *argv[])
     // To display the view, call "show()" (will show fullscreen on device).
     QScopedPointer< QGuiApplication > app(SailfishApp::application(argc, argv));
 
-//    app->setOrganizationName("kz.dpurgin");
-//    app->setApplicationName("harbour-callrecorder");
+    app->setOrganizationName("birefringence");
+    app->setApplicationName("harbour-babymonitor");
 
     QScopedPointer< QQuickView > view(SailfishApp::createView());
-    view->setSource(SailfishApp::pathTo("qml/BabyMonitor.qml"));
+    view->setSource(SailfishApp::pathTo("qml/harbour-babymonitor.qml"));
     view->show();
     SoundAnalyzer sa(app.data());
     view->rootContext()->setContextProperty("soundAnalyzer", &sa);
