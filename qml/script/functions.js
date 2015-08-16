@@ -17,7 +17,10 @@ function updateTrigger(level, millis) {
             delay += millis/1000;
         }
     }
-    if (trigger > delayBar.value) {
-        voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value:'0123456789'}]);
+    if (trigger > delayBar.value && armSwitch.checked) {
+        trigger = 0;
+        triggerBar.value = 0;
+        delay = 0;
+        voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value: phoneNumber.text}]);
     }
 }

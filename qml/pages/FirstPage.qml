@@ -69,7 +69,7 @@ Page {
             }
             Button {
                 text: qsTr("Call")
-                onClicked: voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value:'0123456789'}])
+                onClicked: voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value: phoneNumber.text}])
             }
             Button {
                 text: qsTr("Test")
@@ -81,7 +81,7 @@ Page {
                 width:  parent.width
                 minimumValue: 0
                 maximumValue: 16
-                label: "Threshold"
+                label: "Sound Level Threshold"
                 value: 8
             }
             ProgressBar {
@@ -90,7 +90,7 @@ Page {
                 width:  parent.width
                 minimumValue: 0
                 maximumValue: 16
-                label: "Level"
+                label: "Sound Level"
                 value: 0
                 Connections {
                     target: soundAnalyzer
@@ -101,7 +101,7 @@ Page {
                 id: cooldownBar
 
                 width:  parent.width
-                label: "Cool Down"
+                label: "Cool Down Delay"
                 minimumValue: 0
                 maximumValue: 5
                 value: 1
@@ -110,7 +110,7 @@ Page {
                 id: delayBar
 
                 width:  parent.width
-                label: "Delay"
+                label: "Trigger Threshold"
                 minimumValue: 0
                 maximumValue: 10
                 value: 5
@@ -125,10 +125,18 @@ Page {
                 value: 0
             }
             TextSwitch {
-                id: arm
+                id: armSwitch
 
                 width:  parent.width
                 text: "Armed"
+            }
+            TextField {
+                id: phoneNumber
+
+                width:  parent.width
+                label: "Phone Number"
+                placeholderText: "Please Enter Phone Number"
+                inputMethodHints: Qt.ImhDialableCharactersOnly
             }
         }
     }
