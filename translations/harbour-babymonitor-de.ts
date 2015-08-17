@@ -5,11 +5,15 @@
     <name>AboutPage</name>
     <message>
         <source>Nested Page</source>
-        <translation type="unfinished">Unterseite</translation>
+        <translation type="obsolete">Unterseite</translation>
     </message>
     <message>
         <source>Item</source>
-        <translation type="unfinished">Element</translation>
+        <translation type="obsolete">Element</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -65,10 +69,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cool Down Delay</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Trigger Threshold</source>
         <translation type="unfinished"></translation>
     </message>
@@ -86,6 +86,14 @@
     </message>
     <message>
         <source>Please Enter Phone Number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restore Default Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Trigger Cool Down Delay</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -28,7 +28,9 @@ OTHER_FILES += \
     rpm/harbour-babymonitor.changes.in \
     qml/harbour-babymonitor.qml \
     qml/pages/AboutPage.qml \
-    qml/pages/MainPage.qml
+    qml/pages/MainPage.qml \
+    LICENSE \
+    README.md
 
 # to disable building translations every time, comment out the
 # following CONFIG line
