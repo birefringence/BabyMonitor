@@ -17,9 +17,7 @@
   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifdef QT_QML_DEBUG
 #include <QtQuick>
-#endif
 
 #include <sailfishapp.h>
 
