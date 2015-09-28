@@ -3,8 +3,8 @@ Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=harbour-babymonitor
 Exec=harbour-babymonitor
-Name=BabyMonitor
+Name=Baby Monitor
 # translation example:
 # your app name in German locale (de)
-Name[de]=BabyMonitor
+Name[de]=Baby Monitor
 
