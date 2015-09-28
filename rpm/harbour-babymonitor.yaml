@@ -5,14 +5,14 @@ Release: 1
 # The contents of the Group field should be one of the groups listed here:
 # http://gitorious.org/meego-developer-tools/spectacle/blobs/master/data/GROUPS
 Group: Qt/Qt
-URL: http://example.org/
-License: LICENSE
+URL: https://github.com/birefringence/harbour-babymonitor
+License: GNU GPL v2
 # This must be generated before uploading a package to a remote build service.
 # Usually this line does not need to be modified.
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |
-  Short description of my SailfishOS Application
+  This app calls a predefined number if the noise is above a defined treshold.
 Configure: none
 # The qtc5 builder inserts macros to allow QtCreator to have fine
 # control over qmake/make execution
@@ -37,6 +37,7 @@ Requires:
   - sailfishsilica-qt5 >= 0.10.9 
   - qt5-qtmultimedia-plugin-audio-pulseaudio
   - nemo-qml-plugin-dbus-qt5
+  - nemo-qml-plugin-notifications-qt5
 
 # All installed files
 Files:
