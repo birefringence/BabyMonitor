@@ -25,7 +25,10 @@
 
 #include <QDBusInterface>
 
+#include <QSettings>
+
 #include "soundanalyzer.h"
+#include "appsettings.h"
 
 int main(int argc, char *argv[])
 {
@@ -42,11 +45,14 @@ int main(int argc, char *argv[])
     app->setOrganizationName("birefringence");
     app->setApplicationName("harbour-babymonitor");
 
+    SoundAnalyzer sa(app.data());
+    AppSettings settings(app.data());
+
     QScopedPointer< QQuickView > view(SailfishApp::createView());
+    view->rootContext()->setContextProperty("soundAnalyzer", &sa);
+    view->rootContext()->setContextProperty("settings", &settings);
     view->setSource(SailfishApp::pathTo("qml/harbour-babymonitor.qml"));
     view->show();
-    SoundAnalyzer sa(app.data());
-    view->rootContext()->setContextProperty("soundAnalyzer", &sa);
 
     return app->exec();
 }

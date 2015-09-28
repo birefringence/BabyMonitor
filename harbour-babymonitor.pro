@@ -16,7 +16,8 @@ CONFIG += sailfishapp
 
 SOURCES += \
     src/soundanalyzer.cpp \
-    src/harbour-babymonitor.cpp
+    src/harbour-babymonitor.cpp \
+    src/appsettings.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -30,7 +31,8 @@ OTHER_FILES += \
     qml/pages/AboutPage.qml \
     qml/pages/MainPage.qml \
     LICENSE \
-    README.md
+    README.md \
+    qml/script/defaults.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -42,4 +44,5 @@ QT += dbus multimedia
 PKGCONFIG += libpulse
 
 HEADERS += \
-    src/soundanalyzer.h
+    src/soundanalyzer.h \
+    src/appsettings.h

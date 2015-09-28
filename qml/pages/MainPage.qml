@@ -21,6 +21,8 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 import "../script/functions.js" as Js
+import "../script/defaults.js" as Defaults
+
 
 Page {
     id: page
@@ -38,7 +40,12 @@ Page {
             }
             MenuItem {
                 text: qsTr("Restore Default Settings")
-//                onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
+                onClicked: {
+                    thresholdBar.value = Defaults.defaultThreshold;
+                    cooldownBar.value = Defaults.defaultCoolDownDelay;
+                    delayBar.value = Defaults.defaultTriggerThreshold;
+                    deadTimeBar.value = Defaults.defaultDeadTime;
+                }
             }
         }
 
@@ -83,7 +90,8 @@ Page {
                 minimumValue: 0
                 maximumValue: 16
                 label: qsTr("Sound Level Threshold")
-                value: 8
+                value: settings.value("threshold", Defaults.defaultThreshold)
+                onValueChanged: {settings.setValue("threshold", value);}
             }
             ProgressBar {
                 id: levelBar
@@ -105,7 +113,9 @@ Page {
                 label: qsTr("Trigger Cool Down Delay")
                 minimumValue: 0
                 maximumValue: 5
-                value: 1
+                value: settings.value("coolDownDelay", Defaults.defaultCoolDownDelay)
+                valueText: value.toFixed(1) + " s"
+                onValueChanged: {settings.setValue("coolDownDelay", value);}
             }
             Slider {
                 id: delayBar
@@ -114,7 +124,8 @@ Page {
                 label: qsTr("Trigger Threshold")
                 minimumValue: 0
                 maximumValue: 10
-                value: 5
+                value: settings.value("triggerThreshold", Defaults.defaultTriggerThreshold)
+                onValueChanged: {settings.setValue("triggerThreshold", value);}
             }
             ProgressBar {
                 id: triggerBar
@@ -123,6 +134,26 @@ Page {
                 label: qsTr("Trigger")
                 minimumValue: 0
                 maximumValue: 10
+                value: 0
+            }
+            Slider {
+                id: deadTimeBar
+
+                width:  parent.width
+                label: qsTr("Dead Time")
+                minimumValue: 0
+                maximumValue: 3
+                valueText: value.toFixed(1) + " min"
+                value: settings.value("deadTime", Defaults.defaultDeadTime)
+                onValueChanged: {settings.setValue("deadTime", value);}
+            }
+            ProgressBar {
+                id: remainingDeadBar
+
+                width:  parent.width
+                label: qsTr("Remaining Dead Time")
+                minimumValue: 0
+                maximumValue: 3
                 value: 0
             }
             TextSwitch {
@@ -142,6 +173,8 @@ Page {
                 width:  parent.width
                 label: qsTr("Phone Number")
                 placeholderText: qsTr("Please Enter Phone Number")
+                text: settings.value("phoneNumber", "")
+                onTextChanged: {settings.setValue("phoneNumber", text);}
                 inputMethodHints: Qt.ImhDialableCharactersOnly
             }
         }

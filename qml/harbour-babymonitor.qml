@@ -22,13 +22,12 @@ import Sailfish.Silica 1.0
 import "pages"
 
 import org.nemomobile.dbus 2.0
+import org.nemomobile.notifications 1.0
 
 ApplicationWindow
 {
     initialPage: Component { MainPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
-//    property string coverIcon: "image://theme/icon-cover-play"
-//    property string coverString: qsTr("inactive")
     property bool appActive: false;
 
     DBusInterface {
@@ -37,6 +36,15 @@ ApplicationWindow
         service: 'org.nemomobile.voicecall'
         path: '/'
         iface: 'org.nemomobile.voicecall.VoiceCallManager'
+    }
+
+    Notification {
+        id: notification
+
+        summary: qsTr("BabyMonitor triggered")
+        body: qsTr("If the 'armed' boxed had been checked, a call would have been placed.")
+        previewSummary: qsTr("BabyMonitor triggered")
+        previewBody: qsTr("If the 'armed' boxed had been checked, a call would have been placed.")
     }
 
 }

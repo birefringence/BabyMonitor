@@ -25,63 +25,88 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="36"/>
+        <location filename="../qml/pages/MainPage.qml" line="38"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="40"/>
+        <location filename="../qml/pages/MainPage.qml" line="42"/>
         <source>Restore Default Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="58"/>
+        <location filename="../qml/pages/MainPage.qml" line="65"/>
         <source>Baby Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="65"/>
+        <location filename="../qml/pages/MainPage.qml" line="72"/>
         <source>Warning: Alpha-quality code. Only suitable for testing. Please do not use this as a baby monitor! It is almost certainly going to break in unexpected ways.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="85"/>
+        <location filename="../qml/pages/MainPage.qml" line="92"/>
         <source>Sound Level Threshold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="94"/>
+        <location filename="../qml/pages/MainPage.qml" line="102"/>
         <source>Sound Level</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="105"/>
+        <location filename="../qml/pages/MainPage.qml" line="113"/>
         <source>Trigger Cool Down Delay</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="114"/>
+        <location filename="../qml/pages/MainPage.qml" line="124"/>
         <source>Trigger Threshold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="123"/>
+        <location filename="../qml/pages/MainPage.qml" line="134"/>
         <source>Trigger</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="132"/>
+        <location filename="../qml/pages/MainPage.qml" line="143"/>
+        <source>Dead Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="154"/>
+        <source>Remaining Dead Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="163"/>
         <source>Armed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="143"/>
+        <location filename="../qml/pages/MainPage.qml" line="174"/>
         <source>Phone Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="144"/>
+        <location filename="../qml/pages/MainPage.qml" line="175"/>
         <source>Please Enter Phone Number</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>harbour-babymonitor</name>
+    <message>
+        <location filename="../qml/harbour-babymonitor.qml" line="44"/>
+        <location filename="../qml/harbour-babymonitor.qml" line="46"/>
+        <source>BabyMonitor triggered</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/harbour-babymonitor.qml" line="45"/>
+        <location filename="../qml/harbour-babymonitor.qml" line="47"/>
+        <source>If the &apos;armed&apos; boxed had been checked, a call would have been placed.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -19,27 +19,41 @@
 
 var trigger = 0;
 var delay = 0;
+var deadTime = 0;
 
 function updateTrigger(level, millis) {
-    if (level > thresholdBar.value) {
-        trigger += millis/1000;
-        triggerBar.value = trigger;
-        delay = 0;
+    if (deadTime > 0) {
+        deadTime -= millis/1000;
+        remainingDeadBar.value = deadTime / 60;
     } else {
-        if (delay > cooldownBar.value && trigger > 0) {
-            trigger -= millis/1000;
-            if (trigger < 0) {
-                trigger = 0;
-            }
+        deadTime = 0;
+        remainingDeadBar.value = 0;
+
+        if (level > thresholdBar.value) {
+            trigger += millis/1000;
             triggerBar.value = trigger;
+            delay = 0;
         } else {
-            delay += millis/1000;
+            if (delay > cooldownBar.value && trigger > 0) {
+                trigger -= millis/1000;
+                if (trigger < 0) {
+                    trigger = 0;
+                }
+                triggerBar.value = trigger;
+            } else {
+                delay += millis/1000;
+            }
         }
-    }
-    if (trigger > delayBar.value && armSwitch.checked) {
-        trigger = 0;
-        triggerBar.value = 0;
-        delay = 0;
-        voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value: phoneNumber.text}]);
+        if (trigger > delayBar.value) {
+            trigger = 0;
+            triggerBar.value = 0;
+            delay = 0;
+            deadTime = deadTimeBar.value*60;
+            if (armSwitch.checked) {
+                voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value: phoneNumber.text}]);
+            } else {
+                notification.publish();
+            }
+        }
     }
 }

@@ -4,14 +4,6 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>Nested Page</source>
-        <translation type="obsolete">Unterseite</translation>
-    </message>
-    <message>
-        <source>Item</source>
-        <translation type="obsolete">Element</translation>
-    </message>
-    <message>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
@@ -19,31 +11,12 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <source>My Cover</source>
-        <translation type="vanished">Mein Cover</translation>
-    </message>
-    <message>
         <source>active</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>inactive</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FirstPage</name>
-    <message>
-        <source>Show Page 2</source>
-        <translation type="vanished">Zur Seite 2</translation>
-    </message>
-    <message>
-        <source>UI Template</source>
-        <translation type="vanished">UI-Vorlage</translation>
-    </message>
-    <message>
-        <source>Hello Sailors</source>
-        <translation type="vanished">Hallo Matrosen</translation>
     </message>
 </context>
 <context>
@@ -96,16 +69,24 @@
         <source>Trigger Cool Down Delay</source>
         <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>SecondPage</name>
     <message>
-        <source>Nested Page</source>
-        <translation type="vanished">Unterseite</translation>
+        <source>Dead Time</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Item</source>
-        <translation type="vanished">Element</translation>
+        <source>Remaining Dead Time</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>harbour-babymonitor</name>
+    <message>
+        <source>BabyMonitor triggered</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>If the &apos;armed&apos; boxed had been checked, a call would have been placed.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
