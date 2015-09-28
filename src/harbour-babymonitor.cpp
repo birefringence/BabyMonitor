@@ -17,13 +17,18 @@
   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
+#ifdef QT_QML_DEBUG
 #include <QtQuick>
+#endif
 
 #include <sailfishapp.h>
 
 #include <QDBusInterface>
-
 #include <QSettings>
+#include <QGuiApplication>
+#include <QQuickView>
+#include <QtQml>
+
 
 #include "soundanalyzer.h"
 #include "appsettings.h"
