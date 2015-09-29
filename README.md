@@ -17,6 +17,8 @@ Trigger: Displays the current trigger value. When the value is above the thresho
 
 Dead Time: Defined how many minutes the app will wait after a triggered call until the next call can be triggered.
 
+Remaining Dead Time: No new calls will be triggered, until this bar is empty.
+
 Armed: If unset, only a notification is shown but no call is triggered.
 
 Phone Number: Phone number that will be called if trigger reaches the threshold.
