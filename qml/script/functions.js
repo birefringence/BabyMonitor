@@ -50,7 +50,7 @@ function updateTrigger(level, millis) {
             delay = 0;
             deadTime = deadTimeBar.value*60;
             if (armSwitch.checked) {
-                voiceCall.typedCall('dial', [{type:'s', value:'telepathy-ring/tel/account0'}, {type:'s', value: phoneNumber.text}]);
+                voiceCall.typedCall('dial', [{type:'s', value:'/org/freedesktop/Telepathy/Account/ring/tel/ril_0'}, {type:'s', value: phoneNumber.text}]);
             } else {
                 notification.publish();
             }

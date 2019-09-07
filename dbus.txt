@@ -1,1 +1,6 @@
-dbus-send --session --print-reply --dest="org.nemomobile.voicecall" "/" org.nemomobile.voicecall.VoiceCallManager.dial string:"telepathy-ring/tel/account0" string:"0123456789"
+dbus-send --session --print-reply --dest="org.nemomobile.voicecall" "/" org.nemomobile.voicecall.VoiceCallManager.dial string:"telepathy-ring/tel/account0" string:"+4901234567"
+
+dbus-send --session --print-reply --dest="org.nemomobile.voicecall" "/" org.nemomobile.voicecall.VoiceCallManager.dial string:"/org/freedesktop/Telepathy/Account/ring/tel/ril_0" string:"+4901234567"
+
+dbus-send --system --print-reply --dest="org.ofono" "/ril_0" org.ofono.VoiceCallManager.Dial string:"+4901234567" string:""
+

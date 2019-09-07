@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sa Sep 07 2019 Thomas Zell <t.zell@gmx.de> 0.2-1
+- DBus command fixed for dialling
+
 * Mo Sep 28 2015 Thomas Zell <t.zell@gmx.de> 0.1-1
 - First release
 
