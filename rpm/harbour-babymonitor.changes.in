@@ -9,7 +9,7 @@
 # - Summary of changes
 
 * Sa Sep 07 2019 Thomas Zell <t.zell@gmx.de> 0.2-1
-- DBus command fixed for dialling
+- DBus command fixed for dialing
 
 * Mo Sep 28 2015 Thomas Zell <t.zell@gmx.de> 0.1-1
 - First release
