@@ -37,7 +37,9 @@ OTHER_FILES += \
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
-TRANSLATIONS += translations/harbour-babymonitor-de.ts
+TRANSLATIONS += translations/harbour-babymonitor-de.ts \
+    translations/harbour-babymonitor-fr.ts \
+    translations/harbour-babymonitor-zh_CN.ts
 
 QT += dbus multimedia
 

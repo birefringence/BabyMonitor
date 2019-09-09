@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" lang="fr">
+<TS version="2.1">
 <context>
     <name>AboutPage</name>
     <message>
@@ -42,7 +42,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="72"/>
         <source>Warning: Alpha-quality code. Only suitable for testing. Please do not use this as a baby monitor! It is almost certainly going to break in unexpected ways.</source>
-        <translation>Avertissement : code de qualité alpha. Convient uniquement pour les essais. Ne l'utilisez pas comme babyphone ! Il est presque sûr qu'il va se casser de façon inattendue.</translation>
+        <translation>Avertissement : code de qualité alpha. Convient uniquement pour les essais. Ne l&apos;utilisez pas comme babyphone ! Il est presque sûr qu&apos;il va se casser de façon inattendue.</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="92"/>

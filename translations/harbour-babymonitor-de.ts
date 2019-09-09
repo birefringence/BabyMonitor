@@ -5,88 +5,88 @@
     <name>AboutPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
         <source>active</source>
-        <translation type="unfinished"></translation>
+        <translation>aktiv</translation>
     </message>
     <message>
         <source>inactive</source>
-        <translation type="unfinished"></translation>
+        <translation>inaktiv</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <source>Baby Monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Baby Monitor</translation>
     </message>
     <message>
         <source>Warning: Alpha-quality code. Only suitable for testing. Please do not use this as a baby monitor! It is almost certainly going to break in unexpected ways.</source>
-        <translation type="unfinished"></translation>
+        <translation>Warnung: Der Code hat nur Alpha-Qualität. Bitte nur für Testzwecke verwenden und nicht um ein echtes Baby zu überwachen. Es wird mit Sicherheit zu unerwarteten Problemen kommen.</translation>
     </message>
     <message>
         <source>Sound Level Threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>Lautstärkeschwelle</translation>
     </message>
     <message>
         <source>Sound Level</source>
-        <translation type="unfinished"></translation>
+        <translation>Lautstärke</translation>
     </message>
     <message>
         <source>Trigger Threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>Auslöseschwelle</translation>
     </message>
     <message>
         <source>Trigger</source>
-        <translation type="unfinished"></translation>
+        <translation>Auslöser</translation>
     </message>
     <message>
         <source>Armed</source>
-        <translation type="unfinished"></translation>
+        <translation>Scharf geschaltet</translation>
     </message>
     <message>
         <source>Phone Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Telefonnummer</translation>
     </message>
     <message>
         <source>Please Enter Phone Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte Telefonnummer eingeben</translation>
     </message>
     <message>
         <source>Restore Default Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen zurücksetzen</translation>
     </message>
     <message>
         <source>Trigger Cool Down Delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzögerung der Senkung des Auslösepegels</translation>
     </message>
     <message>
         <source>Dead Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Totzeit</translation>
     </message>
     <message>
         <source>Remaining Dead Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Verbleibende Totzeit</translation>
     </message>
 </context>
 <context>
     <name>harbour-babymonitor</name>
     <message>
         <source>BabyMonitor triggered</source>
-        <translation type="unfinished"></translation>
+        <translation>BabyMonitor ausgelöst</translation>
     </message>
     <message>
         <source>If the &apos;armed&apos; boxed had been checked, a call would have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bei aktiver &apos;Scharf geschaltet&apos; Option wäre jetzt ein Anruf ausgelöst worden.</translation>
     </message>
 </context>
 </TS>
